@@ -1,0 +1,496 @@
+@import "tailwindcss";
+@font-face {
+  font-family: "BrittanySignature";
+  src: url("/fonts/BrittanySignature.woff2") format("woff2"),
+       url("/fonts/BrittanySignature.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "TheSeasons";
+  src: url("/fonts/the-seasons-regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@import "tw-animate-css";
+@import "locomotive-scroll/dist/locomotive-scroll.css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+  
+  /* Custom Luxury Colors */
+  --color-luxury-pink: var(--luxury-pink);
+  --color-luxury-blush: var(--luxury-blush);
+  --color-luxury-white: var(--luxury-white);
+  --color-luxury-text: var(--luxury-text);
+  --color-luxury-gold: var(--luxury-gold);
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 3.6%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 3.6%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 3.6%;
+    --primary: 0 0% 9.019%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 0 0% 96.078%;
+    --secondary-foreground: 0 0% 9.019%;
+    --muted: 0 0% 89.804%;
+    --muted-foreground: 0 0% 39.216%;
+    --accent: 0 0% 9.019%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 84.81% 60.196%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 89.804%;
+    --input: 0 0% 89.804%;
+    --ring: 0 0% 3.6%;
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+    --sidebar: 0 0% 96.1%;
+    --sidebar-foreground: 0 0% 3.6%;
+    --sidebar-primary: 0 0% 9.019%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 0 0% 91.373%;
+    --sidebar-accent-foreground: 0 0% 9.019%;
+    --sidebar-border: 0 0% 88.627%;
+    --sidebar-ring: 0 0% 9.019%;
+    
+    /* Luxury Color Palette */
+    --luxury-pink: #e6dfd6;
+    --luxury-blush: #fafafa;
+    --luxury-white: #fafaf8;
+    --luxury-text: #2a2a2a;
+    --luxury-gold: #d4af37;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 0 0% 3.6%;
+    --foreground: 0 0% 98%;
+    --card: 0 0% 3.6%;
+    --card-foreground: 0 0% 98%;
+    --popover: 0 0% 3.6%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 0 0% 9.019%;
+    --secondary: 0 0% 14.902%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 0 0% 14.902%;
+    --muted-foreground: 0 0% 63.922%;
+    --accent: 0 0% 98%;
+    --accent-foreground: 0 0% 9.019%;
+    --destructive: 0 84.81% 60.196%;
+    --destructive-foreground: 0 0% 9.019%;
+    --border: 0 0% 14.902%;
+    --input: 0 0% 14.902%;
+    --ring: 0 0% 83.6%;
+    --chart-1: 220 13% 91%;
+    --chart-2: 217 33% 17%;
+    --chart-3: 210 40% 96%;
+    --chart-4: 215 28% 17%;
+    --chart-5: 217 33% 17%;
+    --sidebar: 0 0% 7.8%;
+    --sidebar-foreground: 0 0% 98%;
+    --sidebar-primary: 0 0% 98%;
+    --sidebar-primary-foreground: 0 0% 9.019%;
+    --sidebar-accent: 0 0% 14.902%;
+    --sidebar-accent-foreground: 0 0% 98%;
+    --sidebar-border: 0 0% 14.902%;
+    --sidebar-ring: 0 0% 83.6%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.locomotive-scroll {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.locomotive-scroll-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  will-change: transform;
+}
+
+.c-scrollbar {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 7px;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transition: opacity 0.6s;
+  z-index: 9999;
+}
+
+.has-scroll-scrolling .c-scrollbar,
+.has-scroll-dragging .c-scrollbar {
+  opacity: 1;
+}
+
+.c-scrollbar_thumb {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: var(--luxury-pink);
+  opacity: 0.5;
+  width: 7px;
+  border-radius: 10px;
+  margin: 2px;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+
+.has-scroll-dragging .c-scrollbar_thumb {
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+}
+
+@layer components {
+  .container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  @media (min-width: 640px) {
+    .container {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .container {
+      padding-left: 4rem;
+      padding-right: 4rem;
+      max-width: 1400px;
+    }
+  }
+  
+  .luxury-text-shadow {
+    text-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  }
+  
+  .reveal-text {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+  
+  .char {
+    transform: translateY(115%);
+    transition: transform 0.5s cubic-bezier(0.5, 0, 0.5, 1);
+  }
+}
+
+@keyframes subtle-drift {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+
+.animate-subtle-drift {
+  animation: subtle-drift 60s linear infinite;
+}
+
+/* Luxury CTA Button Animation */
+@keyframes luxury-pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(212, 175, 55, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 0 10px rgba(212, 175, 55, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(212, 175, 55, 0);
+  }
+}
+
+@keyframes luxury-shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+/* Gentle glow pulse animation for hero heading */
+@keyframes gentle-glow-pulse {
+  0% {
+    text-shadow:
+      0 0 10px rgba(255, 255, 255, 0.08),
+      0 0 20px rgba(212, 175, 55, 0.05),
+      0 0 30px rgba(212, 175, 55, 0.02);
+  }
+  50% {
+    text-shadow:
+      0 0 15px rgba(255, 255, 255, 0.18),
+      0 0 30px rgba(212, 175, 55, 0.12),
+      0 0 45px rgba(212, 175, 55, 0.06);
+  }
+  100% {
+    text-shadow:
+      0 0 10px rgba(255, 255, 255, 0.08),
+      0 0 20px rgba(212, 175, 55, 0.05),
+      0 0 30px rgba(212, 175, 55, 0.02);
+  }
+}
+
+.luxury-cta-btn {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  animation: luxury-pulse 4s infinite;
+}
+
+.luxury-cta-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 100%;
+  background: linear-gradient(
+    105deg,
+    transparent 20%,
+    rgba(212, 175, 55, 0.1) 40%,
+    rgba(212, 175, 55, 0.3) 50%,
+    rgba(212, 175, 55, 0.1) 60%,
+    transparent 80%
+  );
+  background-size: 200% 100%;
+  animation: luxury-shimmer 4s infinite linear;
+  pointer-events: none;
+}
+
+.luxury-cta-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.15);
+}
+
+/* Luxury CTA Section Background */
+.luxury-cta-section {
+  background: linear-gradient(to bottom, #ffffff 0%, var(--luxury-blush) 50%, #ffffff 100%);
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+/* Elegant underline reveal animation for Design Your Day link */
+@keyframes underline-reveal {
+  0% {
+    background-size: 0% 100%;
+  }
+  100% {
+    background-size: 100% 100%;
+  }
+}
+
+.design-your-day-link {
+  color: var(--luxury-gold);
+  text-decoration: underline;
+  text-decoration-color: var(--luxury-gold);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.design-your-day-link:hover {
+  color: var(--luxury-text);
+  text-decoration-color: var(--luxury-text);
+}
+
+/* Homepage Hero Heading - BrittanySignature Font */
+.home-hero-heading {
+  font-family: "BrittanySignature", cursive;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.4;
+  letter-spacing: 0;
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  
+  /* correct scale baseline */
+  font-size: clamp(3.2rem, 7.1vw, 7.1rem);
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+  opacity: 1;
+  animation: gentle-glow-pulse 4s ease-in-out infinite;
+}
+
+.home-hero-heading > span {
+  display: block;
+}
+
+/* Reusable page heading class for all pages */
+.page-heading {
+  font-family: "BrittanySignature", cursive;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.4;
+  letter-spacing: 0;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  
+  /* correct scale baseline */
+  font-size: clamp(3.2rem, 7.1vw, 7.1rem);
+  margin-bottom: 2rem;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+  opacity: 1;
+  animation: gentle-glow-pulse 4s ease-in-out infinite;
+}
+
+.page-heading--inner {
+  font-family: "TheSeasons", "BrittanySignature", cursive;
+  text-transform: uppercase;
+}
+
+.page-heading > span {
+  display: block;
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 768px) {
+  .home-hero-heading {
+    font-size: clamp(2.5rem, 10vw, 4.7rem);
+  }
+  
+  .page-heading {
+    font-size: clamp(2.5rem, 10vw, 4.7rem);
+  }
+}
+
+/* Fix Brittany kerning issue for ThaT */
+.tight-a {
+  display: inline;
+  margin-right: -0.06em;
+}
+
+.tight-T {
+  display: inline;
+  margin-left: -0.28em;
+}
+
+/* Hero CTA Button - Attention-Seeking Animation */
+.hero-cta-button {
+  animation: pulse-glow 2s ease-in-out infinite;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-cta-button::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  transform: translate(-50%, -50%);
+  transition: width 0.6s, height 0.6s;
+}
+
+.hero-cta-button:hover::before {
+  width: 300px;
+  height: 300px;
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.5), 0 0 40px rgba(212, 175, 55, 0.3);
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(212, 175, 55, 0.8), 0 0 60px rgba(212, 175, 55, 0.5), 0 0 80px rgba(212, 175, 55, 0.3);
+  }
+}
+
+/* Image Loading Placeholder - Soft Luxury Pink Background */
+
