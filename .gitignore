@@ -6,6 +6,6 @@ build/
 dist/
 .vercel/
 unused_backup/
+scripts/
 *.log
 .DS_Store
-scripts/
