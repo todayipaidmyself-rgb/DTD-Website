@@ -22,34 +22,22 @@ export default function Gallery() {
   };
 
   const images = [
-    "/images/new_collection/1.webp",
-    "/images/new_collection/2.webp",
-    "/images/new_collection/3.webp",
-    "/images/new_collection/4.webp",
-    "/images/new_collection/5.webp",
-    "/images/new_collection/6.webp",
-    "/images/new_collection/7.webp",
-    "/images/new_collection/8.webp",
-    "/images/new_collection/9.webp",
-    "/images/new_collection/10.webp",
-    "/images/new_collection/11.webp",
-    "/images/new_collection/12.webp",
-    "/images/new_collection/13.webp",
-    "/images/new_collection/14.webp",
-    "/images/new_collection/15.webp",
-    "/images/new_collection/16.webp",
-    "/images/new_collection/17.webp",
-    "/images/new_collection/18.webp",
-    "/images/new_collection/19.webp",
-    "/images/new_collection/20.webp",
-    "/images/new_collection/21.webp",
-  ].map((src, idx) => ({
-    src,
-    title: "",
-    loc: "",
-    category: "All",
-    alt: `Gallery image ${idx + 1}`,
-  }));
+    { src: "/images/proposal_gallery_1.webp", title: "", loc: "", category: "All", alt: "Proposal gallery image 1" },
+    { src: "/images/proposal_gallery_2.webp", title: "", loc: "", category: "All", alt: "Proposal gallery image 2" },
+    { src: "/images/proposal_gallery_3.webp", title: "", loc: "", category: "All", alt: "Proposal gallery image 3" },
+    { src: "/images/proposal_gallery_4.webp", title: "", loc: "", category: "All", alt: "Proposal gallery image 4" },
+    { src: "/images/proposal_gallery_5.webp", title: "", loc: "", category: "All", alt: "Proposal gallery image 5" },
+    { src: "/images/proposal_gallery_6.webp", title: "", loc: "", category: "All", alt: "Proposal gallery image 6" },
+    { src: "/images/wedding_gallery_1.webp", title: "", loc: "", category: "All", alt: "Wedding gallery image 1" },
+    { src: "/images/wedding_gallery_2.webp", title: "", loc: "", category: "All", alt: "Wedding gallery image 2" },
+    { src: "/images/wedding_gallery_3.webp", title: "", loc: "", category: "All", alt: "Wedding gallery image 3" },
+    { src: "/images/wedding_gallery_4.webp", title: "", loc: "", category: "All", alt: "Wedding gallery image 4" },
+    { src: "/images/wedding_gallery_5.webp", title: "", loc: "", category: "All", alt: "Wedding gallery image 5" },
+    { src: "/images/wedding_gallery_6.webp", title: "", loc: "", category: "All", alt: "Wedding gallery image 6" },
+    { src: "/images/occasions-proposals.webp", title: "", loc: "", category: "All", alt: "Occasions proposals" },
+    { src: "/images/occasions-picnic.webp", title: "", loc: "", category: "All", alt: "Occasions picnic" },
+    { src: "/images/occasions-little-ones.webp", title: "", loc: "", category: "All", alt: "Occasions little ones" },
+  ];
 
   const filteredImages = filter === 'All' ? images : images.filter(img => img.category === filter);
 
