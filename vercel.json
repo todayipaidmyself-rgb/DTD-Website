@@ -3,13 +3,3 @@
   "buildCommand": "npm run build",
   "outputDirectory": "dist"
 }
-{
-  "buildCommand": "echo 'Using pre-built dist folder'",
-  "outputDirectory": "dist",
-  "rewrites": [
-    {
-      "source": "/(.*)",
-      "destination": "/index.html"
-    }
-  ]
-}
