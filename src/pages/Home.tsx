@@ -162,13 +162,7 @@ export default function Home() {
         <div className="absolute inset-0 bg-black/30 z-10" />
         
         <div className="absolute inset-0 z-20 text-center px-6 max-w-6xl mx-auto text-white flex flex-col items-center justify-center">
-          <div className="flex flex-col items-center justify-center gap-3 w-full">
-            <HeroOverlay 
-              imagePath="/brand/dtd-logo-light.png"
-              altText="Dress That Day Logo"
-              subtextBelow=""
-              className="w-[900px] md:w-[1800px] lg:w-[2200px] xl:w-[2400px] max-w-[95vw]"
-            />
+          <div className="flex flex-col items-center justify-center gap-2 w-full">
             <p className="text-white/85 text-sm md:text-base lg:text-lg font-[Poppins] tracking-[0.25em] uppercase max-w-4xl px-4">
               {subtexts[currentSlide]}
             </p>
