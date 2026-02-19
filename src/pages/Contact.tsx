@@ -3,8 +3,24 @@ import Layout from '@/components/Layout';
 import RevealText from '@/components/RevealText';
 import SEO from '@/components/SEO';
 import { Link } from 'wouter';
+import { useEffect, useState } from 'react';
 
 export default function Contact() {
+  // TODO: Replace placeholder "your-form-id" with the real Formspree form ID:
+  // 1) Create/verify form in Formspree dashboard
+  // 2) Set recipient to Sales@dressthatday.com
+  // 3) Copy the /f/XXXXXX endpoint and paste into FORMSPREE_ENDPOINT
+  // 4) Send a test submission and confirm inbox delivery + spam status
+  const FORMSPREE_ENDPOINT = "https://formspree.io/f/xpqjqlpe";
+  const [email, setEmail] = useState("");
+  const [isSent, setIsSent] = useState(false);
+
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    const params = new URLSearchParams(window.location.search);
+    setIsSent(params.get("sent") === "1");
+  }, []);
+
   const schema = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
@@ -148,7 +164,23 @@ export default function Contact() {
 
             <div className="bg-white p-10 shadow-sm border border-gray-100">
               <h2 className="font-serif text-2xl text-luxury-text mb-6">Send Us a Message</h2>
-              <form className="space-y-8" action="https://formspree.io/f/your-form-id" method="POST">
+            {isSent && (
+              <div className="mb-6 text-sm text-green-700 bg-green-50 border border-green-100 px-4 py-3 rounded">
+                Thanks — we’ve received your message.
+              </div>
+            )}
+            <form className="space-y-8" action={FORMSPREE_ENDPOINT} method="POST">
+              <input type="hidden" name="_subject" value="Dress That Day — New Enquiry" />
+              <input type="hidden" name="_replyto" value={email} />
+              <input type="hidden" name="_redirect" value="/contact?sent=1" />
+              <input
+                type="text"
+                name="_gotcha"
+                tabIndex={-1}
+                autoComplete="off"
+                aria-hidden="true"
+                className="sr-only"
+              />
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                   <div className="space-y-2">
                     <label htmlFor="name" className="text-xs uppercase tracking-widest text-gray-500">Name *</label>
@@ -167,6 +199,8 @@ export default function Contact() {
                       type="email" 
                       id="email"
                       name="email"
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
                       required
                       className="w-full border-b border-gray-300 py-2 focus:border-luxury-gold outline-none transition-colors bg-transparent font-body font-light"
                       placeholder="Your Email"
