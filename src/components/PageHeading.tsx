@@ -96,7 +96,7 @@ export default function PageHeading({
       {/* Page Heading - Live text with BrittanySignature font */}
       <h1
         ref={headingRef}
-        className={cn("page-heading page-heading--inner uppercase", textColor)}
+        className={cn("page-heading--inner uppercase", textColor)}
       >
         {lines && lines.length > 0 ? (
           lines.map((line, index) => <span key={index}>{line}</span>)

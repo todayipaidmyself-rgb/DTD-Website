@@ -6,8 +6,8 @@ export default function Footer() {
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
           <div className="col-span-1 md:col-span-1">
-            <div className="mb-6 w-48">
-              <img src="/images/logo_fresh.svg" alt="Dress That Day" className="w-full h-auto brightness-0 opacity-80" />
+            <div className="mb-6 w-40 md:w-48 mx-auto md:mx-0">
+              <img src="/brand/dtd-logo-light.png" alt="Dress That Day" className="w-full h-auto object-contain" />
             </div>
             <p className="font-body text-sm text-gray-600 leading-relaxed mb-6">
               Orchestrating emotions and crafting immersive experiences in Cyprus. Where moments become masterpieces.
