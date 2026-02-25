@@ -42,15 +42,13 @@ export default function Home() {
     "Balloons, décor & details — curated with intention."
   ];
 
-  const heroSlides = [
-    '/images/hero-slide-6.webp', // Lights, Balloons & Event Decor
-    '/images/hero-slide-7.webp', // Themed Parties
-    '/images/hero-slide-8.webp' // Gender Reveal
-  ];
+  const heroVideoSrc = '/videos/hero.mp4';
+  const heroPoster = '/images/hero-poster.webp';
+  const [videoReady, setVideoReady] = useState(false);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentSlide((prev) => (prev + 1) % heroSlides.length);
+      setCurrentSlide((prev) => (prev + 1) % subtexts.length);
     }, 5000);
 
     return () => clearInterval(interval);
@@ -132,28 +130,20 @@ export default function Home() {
       />
       {/* Hero Section */}
       <section ref={heroRef} className="relative h-screen w-full overflow-hidden flex items-center justify-center" data-scroll-section>
-        {/* Slider Images with Cinematic Scale */}
-        {heroSlides.map((slide, index) => (
-          slide === 'https://files.manuscdn.com/user_upload_by_module/session_file/88957639/craUngKWFOaUinZu.webp' ? (
-            <Link key={index} href="/breakfast-with-santa">
-              <div 
-                className={`absolute inset-0 w-full h-full bg-cover bg-center transition-all duration-[2500ms] ease-in-out transform cursor-pointer ${index === currentSlide ? 'opacity-100 scale-105' : 'opacity-0 scale-100'}`}
-                style={{ backgroundImage: `url(${slide})` }}
-                data-scroll
-                data-scroll-speed="-2"
-              />
-            </Link>
-          ) : (
-            <div 
-              key={index}
-              className={`absolute inset-0 w-full h-full bg-cover bg-center transition-all duration-[2500ms] ease-in-out transform ${index === currentSlide ? 'opacity-100 scale-105' : 'opacity-0 scale-100'}`}
-              style={{ backgroundImage: `url(${slide})` }}
-              data-scroll
-              data-scroll-speed="-2"
-            />
-          )
-        ))}
-        
+        {/* Video Background */}
+        <video
+          className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-700 ${videoReady ? 'opacity-100' : 'opacity-0'}`}
+          src={heroVideoSrc}
+          poster={heroPoster}
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="metadata"
+          onCanPlayThrough={() => setVideoReady(true)}
+        />
+
+        {/* Overlay */}
         <div className="absolute inset-0 bg-black/30 z-10" />
         
         <div className="absolute inset-0 z-20 text-center px-6 max-w-6xl mx-auto text-white flex flex-col items-center justify-center">
@@ -168,18 +158,6 @@ export default function Home() {
               </button>
             </Link>
           </div>
-        </div>
-
-        {/* Slider Indicators */}
-        <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-30 flex space-x-3">
-          {heroSlides.map((_, index) => (
-            <button
-              key={index}
-              onClick={() => setCurrentSlide(index)}
-              className={`w-2 h-2 rounded-full transition-all duration-500 ${index === currentSlide ? 'bg-white w-8' : 'bg-white/50 hover:bg-white/80'}`}
-              aria-label={`Go to slide ${index + 1}`}
-            />
-          ))}
         </div>
       </section>
 

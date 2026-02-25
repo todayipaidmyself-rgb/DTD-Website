@@ -31,6 +31,7 @@ import PicnicParties from "./pages/PicnicParties";
 import LittleOnesParties from "./pages/LittleOnesParties";
 import FAQ from "./pages/FAQ";
 import Terms from "./pages/Terms";
+import BlogPost from "./pages/BlogPost";
 
 function Router() {
   return (
@@ -40,6 +41,7 @@ function Router() {
       <Route path="/gallery" component={Gallery} />
       <Route path="/about" component={About} />
       <Route path="/design-your-day" component={DesignYourDay} />
+      <Route path="/blog/:slug" component={BlogPost} />
       <Route path="/blog" component={Blog} />
       <Route path="/faq" component={FAQ} />
       <Route path="/terms" component={Terms} />

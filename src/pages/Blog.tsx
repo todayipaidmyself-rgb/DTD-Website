@@ -4,20 +4,7 @@ import Layout from '@/components/Layout';
 import SEO from '@/components/SEO';
 import { ArrowRight, Calendar, Tag } from 'lucide-react';
 
-export default function Blog() {
-  const [activeCategory, setActiveCategory] = useState('All');
-
-  const categories = [
-    'All',
-    'Kids Parties',
-    'Teepee Sleepovers',
-    'Luxury Picnics',
-    'Baby Showers & Reveals',
-    'Proposal Styling',
-    'Event Styling Tips'
-  ];
-
-  const posts = [
+export const posts = [
     {
       id: 1,
       title: "The Ultimate Guide to Luxury Teepee Sleepovers in Cyprus",
@@ -183,6 +170,19 @@ export default function Blog() {
     }
   ];
 
+export default function Blog() {
+  const [activeCategory, setActiveCategory] = useState('All');
+
+  const categories = [
+    'All',
+    'Kids Parties',
+    'Teepee Sleepovers',
+    'Luxury Picnics',
+    'Baby Showers & Reveals',
+    'Proposal Styling',
+    'Event Styling Tips'
+  ];
+
   const filteredPosts = activeCategory === 'All' 
     ? posts 
     : posts.filter(post => post.category === activeCategory);
@@ -241,49 +241,50 @@ export default function Blog() {
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 md:gap-12">
             {filteredPosts.map((post) => (
-              <article key={post.id} className="group cursor-pointer flex flex-col h-full">
-                <div className="relative h-64 overflow-hidden mb-6 rounded-md bg-gray-100">
-                  <img 
-                    src={post.image} 
-                    alt={post.title} 
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                    onError={(e) => {
-                      e.currentTarget.style.display = 'none';
-                      // Create a placeholder div if image fails
-                      const parent = e.currentTarget.parentElement;
-                      if (parent) {
-                        parent.classList.add('flex', 'items-center', 'justify-center', 'bg-luxury-blush/30');
-                        const placeholder = document.createElement('div');
-                        placeholder.className = 'text-luxury-text/30 font-serif text-xl uppercase tracking-widest';
-                        placeholder.innerText = 'Dress That Day';
-                        parent.appendChild(placeholder);
-                      }
-                    }}
-                  />
-                  <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-4 py-1 text-xs uppercase tracking-widest text-luxury-text">
-                    {post.category}
+              <Link key={post.id} href={post.slug} className="group cursor-pointer flex flex-col h-full">
+                <article className="flex flex-col h-full">
+                  <div className="relative h-64 overflow-hidden mb-6 rounded-md bg-gray-100">
+                    <img 
+                      src={post.image} 
+                      alt={post.title} 
+                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                      onError={(e) => {
+                        e.currentTarget.style.display = 'none';
+                        const parent = e.currentTarget.parentElement;
+                        if (parent) {
+                          parent.classList.add('flex', 'items-center', 'justify-center', 'bg-luxury-blush/30');
+                          const placeholder = document.createElement('div');
+                          placeholder.className = 'text-luxury-text/30 font-serif text-xl uppercase tracking-widest';
+                          placeholder.innerText = 'Dress That Day';
+                          parent.appendChild(placeholder);
+                        }
+                      }}
+                    />
+                    <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-4 py-1 text-xs uppercase tracking-widest text-luxury-text">
+                      {post.category}
+                    </div>
                   </div>
-                </div>
-                
-                <div className="flex items-center text-xs text-gray-400 mb-3 uppercase tracking-wider space-x-4">
-                  <span className="flex items-center"><Calendar size={12} className="mr-1" /> {post.date}</span>
-                  <span className="flex items-center"><Tag size={12} className="mr-1" /> {post.category}</span>
-                </div>
+                  
+                  <div className="flex items-center text-xs text-gray-400 mb-3 uppercase tracking-wider space-x-4">
+                    <span className="flex items-center"><Calendar size={12} className="mr-1" /> {post.date}</span>
+                    <span className="flex items-center"><Tag size={12} className="mr-1" /> {post.category}</span>
+                  </div>
 
-                <h2 className="font-serif text-2xl text-black mb-4 group-hover:text-[#d8c07f] transition-colors duration-300 leading-tight">
-                  {post.title}
-                </h2>
-                
-                <p className="font-body text-black/70 font-light mb-6 flex-grow line-clamp-3">
-                  {post.excerpt}
-                </p>
+                  <h2 className="font-serif text-2xl text-black mb-4 group-hover:text-[#d8c07f] transition-colors duration-300 leading-tight">
+                    {post.title}
+                  </h2>
+                  
+                  <p className="font-body text-black/70 font-light mb-6 flex-grow line-clamp-3">
+                    {post.excerpt}
+                  </p>
 
-                <div className="mt-auto">
-                  <span className="inline-flex items-center text-sm uppercase tracking-widest text-black group-hover:text-[#d8c07f] transition-colors duration-300 border-b border-transparent group-hover:border-[#d8c07f] pb-1">
-                    Read Article <ArrowRight size={14} className="ml-2 group-hover:translate-x-1 transition-transform duration-300" />
-                  </span>
-                </div>
-              </article>
+                  <div className="mt-auto">
+                    <span className="inline-flex items-center text-sm uppercase tracking-widest text-black group-hover:text-[#d8c07f] transition-colors duration-300 border-b border-transparent group-hover:border-[#d8c07f] pb-1">
+                      Read Article <ArrowRight size={14} className="ml-2 group-hover:translate-x-1 transition-transform duration-300" />
+                    </span>
+                  </div>
+                </article>
+              </Link>
             ))}
           </div>
 
