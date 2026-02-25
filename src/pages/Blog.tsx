@@ -38,7 +38,7 @@ export default function Blog() {
     },
     {
       id: 3,
-      title: "How to Style a Chic Baby Shower: Trends for 2024",
+      title: "How to Style a Chic Baby Shower: Trends for 2025",
       excerpt: "Move over traditional pink and blue. We're exploring the sophisticated world of neutral palettes, organic textures, and immersive baby shower experiences.",
       category: "Baby Showers & Reveals",
       date: "November 2, 2025",
