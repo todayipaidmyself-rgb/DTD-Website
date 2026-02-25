@@ -54,7 +54,7 @@ export default function ExperienceSpotlight() {
 
   return (
     <>
-      <section className="pt-24 pb-12 bg-[#f7f7f7] border-b border-black/10" data-scroll-section>
+      <section className="pt-16 pb-8 bg-[#f7f7f7] border-b border-black/10" data-scroll-section>
         <div className="container mx-auto px-6 text-center space-y-4">
           <p className="text-[11px] uppercase tracking-[0.35em] text-black/60">Experiences</p>
           <h2 className="font-serif text-4xl md:text-5xl text-black tracking-tight">
@@ -67,9 +67,9 @@ export default function ExperienceSpotlight() {
         </div>
       </section>
 
-      <section className="py-10 bg-[#fdfdfd] border-b border-black/10" data-scroll-section>
+      <section className="py-6 bg-[#fdfdfd] border-b border-black/10" data-scroll-section>
         <div className="container mx-auto px-6">
-          <div className="flex flex-wrap items-center justify-center gap-3 text-center">
+          <div className="flex flex-wrap items-center justify-center gap-2.5 text-center">
             {groupFilters.map((group) => (
               <button
                 key={group.label}

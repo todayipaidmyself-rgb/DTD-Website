@@ -190,54 +190,38 @@ export default function Home() {
 
       <ExperienceSpotlight />
 
-      {/* SECTION 1 — Professional Event Decor & Styling */}
+      {/* SECTION 1 — Professional Event Styling Services (text-led) */}
       <section className="py-32 bg-luxury-blush/10 relative overflow-hidden fade-in-section" data-scroll-section>
         <div className="absolute top-0 left-0 w-full h-full opacity-[0.03] pointer-events-none parallax-bg">
           <img src="/images/logo_fresh.svg" alt="" className="w-full h-full object-cover brightness-0 opacity-10" />
         </div>
         
         <div className="container mx-auto px-6 relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
-            <div data-scroll data-scroll-speed="1">
-              <span className="block font-display text-luxury-gold text-lg tracking-[0.2em] uppercase mb-6">Professional Event Decor, Styling & Hire Services, Cyprus</span>
-              <RevealText 
-                text="The Finishing Touch." 
-                tag="h2" 
-                className="font-serif text-5xl md:text-6xl text-luxury-text mb-8 leading-tight"
-              />
-              <p className="font-body text-gray-600 leading-relaxed mb-8 text-lg font-light">
-                Looking for an event décor provider to finish and ‘dress’ your event? Dress That Day delivers a five-star styling service, refined inspiration, and beautifully executed details — from concept to final flourish.
-              </p>
-              <p className="font-body text-gray-600 leading-relaxed mb-10 text-lg font-light">
-                We believe that every event is a canvas waiting to be "dressed." Our mission is to infuse your celebration with creativity, inspiration, and an obsessive attention to detail, delivering a refined 5-star experience that lingers in the memory long after the last guest has departed.
-              </p>
-              
-              <div className="mb-10">
-                <h3 className="font-serif text-2xl text-luxury-text mb-4">Event Decor & Styling</h3>
-                <ul className="grid grid-cols-2 gap-x-4 gap-y-2 font-body text-gray-600 text-sm font-light">
-                  <li className="flex items-center"><span className="w-1.5 h-1.5 bg-luxury-gold rounded-full mr-2"></span>Inspiration & Ideas</li>
-                  <li className="flex items-center"><span className="w-1.5 h-1.5 bg-luxury-gold rounded-full mr-2"></span>Themed Styling</li>
-                  <li className="flex items-center"><span className="w-1.5 h-1.5 bg-luxury-gold rounded-full mr-2"></span>Event Dressing, Decor & Hire</li>
-                  <li className="flex items-center"><span className="w-1.5 h-1.5 bg-luxury-gold rounded-full mr-2"></span>Lighting</li>
-                  <li className="flex items-center"><span className="w-1.5 h-1.5 bg-luxury-gold rounded-full mr-2"></span>Table Decor</li>
-                  <li className="flex items-center"><span className="w-1.5 h-1.5 bg-luxury-gold rounded-full mr-2"></span>Prop Hire</li>
-                </ul>
-              </div>
+          <div className="max-w-4xl mx-auto space-y-6 text-center" data-scroll data-scroll-speed="1">
+            <p className="text-[11px] uppercase tracking-[0.35em] text-black/60">EVENT COLLECTIONS</p>
+            <h2 className="font-serif text-4xl md:text-5xl text-black tracking-tight">
+              The Finishing Touch.
+            </h2>
+            <p className="font-body text-base md:text-lg text-black/70 font-light">
+              We create refined, design-led events with seamless execution and considered detail.
+            </p>
 
-              <Link href="/about">
-                <span className="inline-block border-b border-luxury-text pb-1 text-luxury-text uppercase tracking-widest text-sm hover:text-luxury-gold hover:border-luxury-gold transition-all duration-300 cursor-pointer">
-                  Discover Our Story
-                </span>
-              </Link>
-            </div>
-            
-            <div className="relative h-[700px] w-full overflow-hidden group" data-scroll data-scroll-speed="-1">
-              <div className="absolute inset-0 bg-black/10 z-10 group-hover:bg-transparent transition-colors duration-700" />
-              <img 
-                src="/images/about_founder_portrait_style.webp" 
-                alt="Dress That Day Founder" 
-                className="absolute inset-0 w-full h-full object-cover transition-transform duration-[2s] ease-out group-hover:scale-105"
-              />
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4 font-body text-black/70 text-base font-light text-left md:text-left">
+              <span>Bespoke Event Design & Creative Direction</span>
+              <span>Concept Development & Visual Mood Boards</span>
+              <span>Contemporary Wedding & Celebration Styling</span>
+              <span>Corporate & Brand Event Design</span>
+              <span>Full Venue Transformation</span>
+              <span>Ceremony & Reception Styling</span>
+              <span>Modern Backdrops & Statement Installations</span>
+              <span>Elevated Table Styling & Contemporary Centrepieces</span>
+              <span>Luxury Linen, Tableware & Furniture Hire</span>
+              <span>Custom Signage & Personalised Finishing Touches</span>
+              <span>Ambient, Architectural & Feature Lighting</span>
+              <span>Dancefloor & Stage Design</span>
+              <span>Lounge Areas & Curated Guest Spaces</span>
+              <span>On-Site Styling & Production Management</span>
+              <span>Professional Set-Up & Breakdown</span>
             </div>
           </div>
         </div>
@@ -266,7 +250,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6 md:gap-8">
             {categories.map((category, index) => (
               <Link key={index} href={category.link}>
                 <div className="group relative aspect-square overflow-hidden cursor-pointer">
@@ -309,31 +293,35 @@ export default function Home() {
             <div className="order-1 lg:order-2" data-scroll data-scroll-speed="-0.5">
               <span className="block font-display text-luxury-gold text-lg tracking-[0.2em] uppercase mb-6">Versatility & Elegance</span>
               <RevealText 
-                text="All Kinds of Occasions" 
+                text="Made for Magical Moments" 
                 tag="h2" 
                 className="font-serif text-5xl md:text-6xl text-luxury-text mb-8 leading-tight"
               />
               <p className="font-body text-gray-600 leading-relaxed mb-8 text-lg font-light">
-                Whether it's a whimsical children's birthday, a sophisticated baby shower, a romantic proposal, or a corporate gala, we bring the same level of dedication and artistry to every event.
+                From whimsical children’s birthday parties and stylish teen celebrations to beautiful baby showers, romantic proposals, and show-stopping corporate galas — we love bringing ideas to life in the most creative way possible.
+                No two events are ever the same, and that’s exactly how we like it.
               </p>
               <ul className="space-y-4 mb-10 font-body text-gray-600 font-light">
                 <li className="flex items-center">
                   <span className="w-1.5 h-1.5 bg-luxury-gold rounded-full mr-4" />
-                  Bespoke Concept Design
+                  Bespoke Concept Design – Big ideas, bold themes, beautiful details. We turn your vision into a fully styled experience.
                 </li>
                 <li className="flex items-center">
                   <span className="w-1.5 h-1.5 bg-luxury-gold rounded-full mr-4" />
-                  Full-Service Styling & Setup
+                  Full-Service Styling & Set-Up – We handle everything, transforming your space from blank canvas to wow-worthy.
                 </li>
                 <li className="flex items-center">
                   <span className="w-1.5 h-1.5 bg-luxury-gold rounded-full mr-4" />
-                  Premium Prop Hire & Floral Artistry
+                  Premium Prop Hire & Floral Styling – Statement backdrops, fun features, dreamy florals, and all the finishing touches.
                 </li>
                 <li className="flex items-center">
                   <span className="w-1.5 h-1.5 bg-luxury-gold rounded-full mr-4" />
-                  Seamless Coordination
+                  Seamless Coordination – Smooth planning, happy guests, zero stress — just enjoy the celebration.
                 </li>
               </ul>
+              <p className="font-body text-gray-600 leading-relaxed mb-8 text-lg font-light">
+                Because every moment deserves a little magic.
+              </p>
               <Link href="/contact">
                 <span className="luxury-cta-btn inline-block px-10 py-4 bg-luxury-text text-white text-sm uppercase tracking-[0.2em] hover:bg-luxury-gold transition-colors duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 cursor-pointer">
                   Start Planning
