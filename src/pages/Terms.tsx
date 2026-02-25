@@ -92,8 +92,8 @@ export default function Terms() {
               If you have any questions about these Terms and Conditions, please contact us at:
             </p>
             <p>
-              <strong>Email:</strong> <a href="mailto:hello@dressthatday.com">hello@dressthatday.com</a><br />
-              <strong>Phone:</strong> <a href="tel:+35799512309">(00 357) 99 512309</a>
+              <strong>Email:</strong> <a href="mailto:Sales@dressthatday.com">Sales@dressthatday.com</a><br />
+              <strong>Phone:</strong> <a href="tel:+35799512309">(00 995) 12309</a>
             </p>
             
             <div className="mt-12 pt-8 border-t border-gray-100">

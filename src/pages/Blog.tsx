@@ -23,7 +23,7 @@ export default function Blog() {
       title: "The Ultimate Guide to Luxury Teepee Sleepovers in Cyprus",
       excerpt: "Transform your child's birthday into a magical overnight adventure. Discover the secrets to hosting the perfect teepee sleepover, from themes to breakfast ideas.",
       category: "Teepee Sleepovers",
-      date: "October 15, 2023",
+      date: "October 15, 2025",
       image: "/images/hero_slide_teepee_luxury.webp",
       slug: "/blog/luxury-teepee-sleepovers-cyprus"
     },
@@ -32,7 +32,7 @@ export default function Blog() {
       title: "5 Romantic Proposal Ideas in Paphos That She'll Never Forget",
       excerpt: "Planning to pop the question? Explore our curated list of the most breathtaking proposal spots in Paphos, complete with styling tips for that perfect 'Yes'.",
       category: "Proposal Styling",
-      date: "September 28, 2023",
+      date: "September 28, 2025",
       image: "/images/hero_slide_proposal_luxury.webp",
       slug: "/blog/romantic-proposal-ideas-paphos"
     },
@@ -41,7 +41,7 @@ export default function Blog() {
       title: "How to Style a Chic Baby Shower: Trends for 2024",
       excerpt: "Move over traditional pink and blue. We're exploring the sophisticated world of neutral palettes, organic textures, and immersive baby shower experiences.",
       category: "Baby Showers & Reveals",
-      date: "November 2, 2023",
+      date: "November 2, 2025",
       image: "/images/hero_slide_baby_shower_luxury.webp",
       slug: "/blog/chic-baby-shower-trends-2024"
     },
@@ -50,7 +50,7 @@ export default function Blog() {
       title: "Creating the Perfect Beach Picnic: A Step-by-Step Guide",
       excerpt: "From selecting the right location to choosing the menu, learn how to orchestrate a flawless luxury beach picnic on the stunning coast of Cyprus.",
       category: "Luxury Picnics",
-      date: "August 10, 2023",
+      date: "August 10, 2025",
       image: "/images/hero_slide_picnic_luxury.webp",
       slug: "/blog/perfect-beach-picnic-guide"
     },
@@ -59,7 +59,7 @@ export default function Blog() {
       title: "Why Professional Event Styling Matters for Kids' Parties",
       excerpt: "It's more than just balloons. Discover how professional styling creates immersive worlds that spark imagination and create lasting childhood memories.",
       category: "Kids Parties",
-      date: "July 5, 2023",
+      date: "July 5, 2025",
       image: "/images/hero_slide_kids_luxury.webp",
       slug: "/blog/professional-event-styling-kids-parties"
     },
@@ -68,7 +68,7 @@ export default function Blog() {
       title: "Top 10 Venues for Luxury Events in Limassol",
       excerpt: "A curated selection of Limassol's most exclusive venues, perfect for hosting elegant celebrations, from intimate gatherings to grand parties.",
       category: "Event Styling Tips",
-      date: "June 20, 2023",
+      date: "June 20, 2025",
       image: "/images/cyprus_hero_terrace_v2.webp",
       slug: "/blog/top-luxury-event-venues-limassol"
     },
@@ -78,7 +78,7 @@ export default function Blog() {
       title: "Safari Adventure: Styling a Wildly Elegant Kids Party",
       excerpt: "Go wild with style! Learn how to create a sophisticated safari-themed birthday bash with sage green balloons, gold accents, and life-sized animal props.",
       category: "Kids Parties",
-      date: "January 12, 2024",
+      date: "January 12, 2025",
       image: "/images/blog_kids_party_safari.webp",
       slug: "/blog/safari-adventure-kids-party-styling"
     },
@@ -87,7 +87,7 @@ export default function Blog() {
       title: "Enchanted Garden: A Whimsical Fairy Party Theme",
       excerpt: "Sprinkle some magic on your little one's special day. We share tips for creating an ethereal fairy garden party with pastel florals, tulle details, and butterfly accents.",
       category: "Kids Parties",
-      date: "February 5, 2024",
+      date: "February 5, 2025",
       image: "/images/blog_kids_party_fairy.webp",
       slug: "/blog/enchanted-garden-fairy-party-theme"
     },
@@ -96,7 +96,7 @@ export default function Blog() {
       title: "Boho Chic Sleepovers: The Ultimate Indoor Glamping Experience",
       excerpt: "Bring the outdoors in with a cozy boho-chic teepee sleepover. Discover how to layer textures, lights, and macrame for a dreamy slumber party setup.",
       category: "Teepee Sleepovers",
-      date: "January 28, 2024",
+      date: "January 28, 2025",
       image: "/images/blog_teepee_boho_chic.webp",
       slug: "/blog/boho-chic-teepee-sleepover-ideas"
     },
@@ -105,7 +105,7 @@ export default function Blog() {
       title: "Movie Night Magic: Hosting a Luxury Cinema Sleepover",
       excerpt: "Lights, camera, action! Create a blockbuster birthday with a luxury movie night teepee setup, complete with a popcorn bar and cozy viewing area.",
       category: "Teepee Sleepovers",
-      date: "March 10, 2024",
+      date: "March 10, 2025",
       image: "/images/blog_teepee_movie_night.webp",
       slug: "/blog/luxury-movie-night-sleepover-guide"
     },
@@ -114,7 +114,7 @@ export default function Blog() {
       title: "Sunset Romance: Planning a Cliffside Picnic in Cyprus",
       excerpt: "Celebrate love with a breathtaking view. Our guide to planning a romantic sunset picnic on the cliffs of Cyprus, featuring champagne and gourmet treats.",
       category: "Luxury Picnics",
-      date: "April 2, 2024",
+      date: "April 2, 2025",
       image: "/images/blog_picnic_sunset_romance.webp",
       slug: "/blog/sunset-cliffside-picnic-cyprus"
     },
@@ -123,7 +123,7 @@ export default function Blog() {
       title: "Beachside Bliss: Styling a Luxury Group Picnic",
       excerpt: "Gather your friends for an unforgettable beach day. Tips for styling a large group picnic with low tables, crystal glassware, and coastal-inspired decor.",
       category: "Luxury Picnics",
-      date: "May 15, 2024",
+      date: "May 15, 2025",
       image: "/images/blog_picnic_group_celebration.webp",
       slug: "/blog/luxury-beach-group-picnic-styling"
     },
@@ -132,7 +132,7 @@ export default function Blog() {
       title: "Neutral Elegance: A Modern Take on Baby Showers",
       excerpt: "Embrace the beauty of beige. Explore the trend of neutral-toned baby showers featuring pampas grass, white balloons, and minimalist luxury styling.",
       category: "Baby Showers & Reveals",
-      date: "February 20, 2024",
+      date: "February 20, 2025",
       image: "/images/blog_baby_shower_neutral.webp",
       slug: "/blog/neutral-elegance-baby-shower-ideas"
     },
@@ -141,7 +141,7 @@ export default function Blog() {
       title: "Pink or Blue? Creative Gender Reveal Party Ideas",
       excerpt: "Make the big reveal unforgettable. From smoke cannons to giant light-up letters, discover creative and stylish ways to announce your baby's gender.",
       category: "Baby Showers & Reveals",
-      date: "March 5, 2024",
+      date: "March 5, 2025",
       image: "/images/blog_baby_shower_gender_reveal.webp",
       slug: "/blog/creative-gender-reveal-party-ideas"
     },
@@ -150,7 +150,7 @@ export default function Blog() {
       title: "The Perfect 'Yes': Styling a Beach Proposal at Sunset",
       excerpt: "Set the scene for a life-changing moment. How to style a romantic beach proposal with candles, roses, and the stunning backdrop of a Cyprus sunset.",
       category: "Proposal Styling",
-      date: "January 8, 2024",
+      date: "January 8, 2025",
       image: "/images/blog_proposal_beach_sunset.webp",
       slug: "/blog/styling-perfect-beach-proposal"
     },
@@ -159,7 +159,7 @@ export default function Blog() {
       title: "Intimate Luxury: A Private Dinner Proposal Guide",
       excerpt: "For a more private moment, consider a luxury dinner proposal. We share ideas for creating a romantic, candlelit atmosphere for just the two of you.",
       category: "Proposal Styling",
-      date: "February 14, 2024",
+      date: "February 14, 2025",
       image: "/images/blog_proposal_private_dinner.webp",
       slug: "/blog/private-dinner-proposal-styling-guide"
     },
@@ -168,7 +168,7 @@ export default function Blog() {
       title: "5 Essential Tips for Styling an Outdoor Event in Cyprus",
       excerpt: "Planning an event under the sun? Expert advice on managing heat, wind, and lighting to ensure your outdoor celebration is both beautiful and comfortable.",
       category: "Event Styling Tips",
-      date: "April 20, 2024",
+      date: "April 20, 2025",
       image: "/images/blog_styling_tips_outdoor.webp",
       slug: "/blog/outdoor-event-styling-tips-cyprus"
     },
@@ -177,7 +177,7 @@ export default function Blog() {
       title: "Choosing the Right Color Palette for Your Celebration",
       excerpt: "Colors set the mood. Learn how to select a cohesive and sophisticated color palette that reflects your personal style and the theme of your event.",
       category: "Event Styling Tips",
-      date: "May 5, 2024",
+      date: "May 5, 2025",
       image: "/images/blog_styling_tips_color_palette.webp",
       slug: "/blog/choosing-event-color-palette-guide"
     }
