@@ -27,8 +27,8 @@ export default function Contact() {
     "name": "Dress That Day",
     "description": "Luxury event styling and party planning services in Cyprus specializing in weddings, proposals, birthday parties, teepee parties, picnics, and special celebrations",
     "url": "https://dressthatday.site",
-    "telephone": "+35799512309",
-    "email": "hello@dressthatday.com",
+    "telephone": "26323212 / 26323209",
+    "email": "Sales@dressthatday.com",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "4 Agiou Stefanou Street",
@@ -81,7 +81,7 @@ export default function Contact() {
     <Layout>
       <SEO 
         title="Contact Us | Book Your Luxury Event Styling | Dress That Day Cyprus"
-        description="Ready to plan your dream event? Contact Dress That Day for luxury event styling in Paphos and Limassol, Cyprus. Weddings, proposals, birthdays, teepee parties, and more. Call +357 99 512309 or email hello@dressthatday.com"
+        description="Ready to plan your dream event? Contact Dress That Day for luxury event styling in Paphos and Limassol, Cyprus. Weddings, proposals, birthdays, teepee parties, and more. Call 26323212 or 26323209, mobile +99512309, or email Sales@dressthatday.com"
         keywords="contact Dress That Day, book event planner Cyprus, event styling inquiry, Cyprus party planner contact, wedding planner Cyprus contact, event consultation Cyprus, book party stylist Cyprus, Paphos event planner contact, Limassol event styling, Cyprus event booking"
         canonical="/contact"
         schema={schema}
@@ -105,11 +105,15 @@ export default function Contact() {
                 <h2 className="font-serif text-2xl text-luxury-text mb-4">Get in Touch</h2>
                 <p className="font-body text-gray-600 font-light mb-2">
                   <span className="block text-xs uppercase tracking-widest text-gray-400 mb-1">Phone / WhatsApp</span>
-                  <a href="tel:+35799512309" className="hover:text-luxury-gold transition-colors text-lg">(00 357) 99 512309</a>
+                  <a href="tel:+35726323212" className="hover:text-luxury-gold transition-colors text-lg">26323212</a>
+                  <span className="block text-xs text-gray-400">or</span>
+                  <a href="tel:+35726323209" className="hover:text-luxury-gold transition-colors text-lg">26323209</a>
+                  <span className="block text-xs text-gray-400">mobile</span>
+                  <a href="tel:+35799512309" className="hover:text-luxury-gold transition-colors text-lg">+99512309</a>
                 </p>
                 <p className="font-body text-gray-600 font-light">
                   <span className="block text-xs uppercase tracking-widest text-gray-400 mb-1">Email</span>
-                  <a href="mailto:hello@dressthatday.com" className="hover:text-luxury-gold transition-colors text-lg">hello@dressthatday.com</a>
+                  <a href="mailto:Sales@dressthatday.com" className="hover:text-luxury-gold transition-colors text-lg">Sales@dressthatday.com</a>
                 </p>
               </div>
 
@@ -265,8 +269,8 @@ export default function Contact() {
           <div className="max-w-4xl mx-auto mt-20 text-center">
             <p className="font-body text-gray-600 font-light text-sm">
               Prefer to chat? Reach us on WhatsApp at{' '}
-              <a href="https://wa.me/35799512309" className="text-luxury-gold hover:underline" target="_blank" rel="noopener noreferrer">
-                +357 99 512309
+              <a href="https://wa.me/99512309" className="text-luxury-gold hover:underline" target="_blank" rel="noopener noreferrer">
+                +99512309
               </a>
               {' '}for instant responses.
             </p>

@@ -45,8 +45,10 @@ export default function Footer() {
             <h4 className="font-display text-lg mb-6">Contact</h4>
             <ul className="space-y-3 font-body text-sm text-gray-600">
               <li>Paphos & Limassol, Cyprus</li>
-              <li><a href="tel:+35799512309" className="hover:text-luxury-gold transition-colors">(00 357) 99 512309</a></li>
-              <li><a href="mailto:hello@dressthatday.com" className="hover:text-luxury-gold transition-colors">hello@dressthatday.com</a></li>
+              <li><a href="tel:+35726323212" className="hover:text-luxury-gold transition-colors">26323212</a></li>
+              <li><a href="tel:+35726323209" className="hover:text-luxury-gold transition-colors">26323209</a></li>
+              <li><a href="tel:+35799512309" className="hover:text-luxury-gold transition-colors">+99512309</a></li>
+              <li><a href="mailto:Sales@dressthatday.com" className="hover:text-luxury-gold transition-colors">Sales@dressthatday.com</a></li>
               <li className="pt-4">
                 <Link href="/contact" className="inline-block px-6 py-2 border border-luxury-text text-xs uppercase tracking-widest hover:bg-luxury-text hover:text-white transition-all duration-300">
                   Get in Touch
