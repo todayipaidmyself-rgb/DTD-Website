@@ -197,28 +197,28 @@ export default function Blog() {
       />
 
       {/* Hero Section */}
-      <section className="pt-36 pb-16 bg-[#f7f7f7] border-b border-black/10 relative overflow-hidden" data-scroll-section>
-        <div className="container mx-auto px-6 relative z-10 text-center space-y-4">
+      <section className="pt-36 pb-18 bg-[#f7f7f7] border-b border-black/10 relative overflow-hidden" data-scroll-section>
+        <div className="container mx-auto px-6 relative z-10 text-center space-y-5">
           <p className="text-[11px] uppercase tracking-[0.35em] text-black/60">Journal</p>
           <h1 className="font-serif text-4xl md:text-5xl text-black tracking-tight">
             Stories & Inspiration
           </h1>
-          <p className="font-body text-base md:text-lg text-black/70 max-w-2xl mx-auto font-light">
+          <p className="font-body text-base md:text-lg text-black/70 max-w-3xl mx-auto font-light leading-relaxed">
             Refinement, behind-the-scenes details, and ideas from our luxury event styling journeys across Cyprus.
           </p>
         </div>
       </section>
 
       {/* Categories */}
-      <section className="py-10 bg-[#fdfdfd] border-b border-black/10 sticky top-16 z-30" data-scroll-section>
-        <div className="container mx-auto px-6 overflow-x-auto">
+      <section className="py-12 bg-[#fdfdfd] border-b border-black/10" data-scroll-section>
+        <div className="container mx-auto px-6">
           {/* Mobile Swipe Hint */}
           <div className="md:hidden text-center mb-4">
             <span className="text-[10px] uppercase tracking-widest text-gray-400 font-light">
               Swipe to explore more
             </span>
           </div>
-          <div className="flex space-x-4 md:justify-center min-w-max">
+          <div className="flex flex-wrap justify-center gap-3 md:gap-4">
             {categories.map((cat) => (
               <button
                 key={cat}
@@ -239,10 +239,10 @@ export default function Blog() {
       {/* Blog Grid */}
       <section className="py-24 bg-white" data-scroll-section>
         <div className="container mx-auto px-6">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 md:gap-12">
             {filteredPosts.map((post) => (
               <article key={post.id} className="group cursor-pointer flex flex-col h-full">
-                <div className="relative h-64 overflow-hidden mb-6 rounded-sm bg-gray-100">
+                <div className="relative h-64 overflow-hidden mb-6 rounded-md bg-gray-100">
                   <img 
                     src={post.image} 
                     alt={post.title} 

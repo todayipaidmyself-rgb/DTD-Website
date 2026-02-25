@@ -49,7 +49,7 @@ export const experiences: ExperienceItem[] = [
     date: "January 22, 2025",
     title: "Baby Showers & Reveals in Bloom",
     excerpt: "Soft blooms, sculptural balloons, and calm hues that frame the celebration without overwhelming the moment.",
-    image: "/images/experiences/baby-showers-hero.webp",
+    image: "/images/baby_shower_elegant.webp",
     featuredRank: 3,
   },
   {

@@ -24,7 +24,7 @@ export default function RevealText({
     // Split text into words/chars logic could go here for more complex animations
     // For now, we'll do a simple reveal from bottom
     
-    gsap.fromTo(element, 
+    const animation = gsap.fromTo(element, 
       { 
         y: 100, 
         opacity: 0,
@@ -43,6 +43,17 @@ export default function RevealText({
         }
       }
     );
+
+    // Fallback: ensure text becomes visible even if ScrollTrigger never fires
+    const fallback = window.setTimeout(() => {
+      if (animation && animation.progress() === 0) {
+        gsap.set(element, { y: 0, opacity: 1, rotateX: 0 });
+      }
+    }, 1500);
+
+    return () => {
+      window.clearTimeout(fallback);
+    };
   }, [text, delay]);
 
   return (
