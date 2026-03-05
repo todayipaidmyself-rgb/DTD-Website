@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState, useEffect } from "react";
 import { useLocation } from "wouter";
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
@@ -94,27 +94,27 @@ const Lightbox = ({
   );
 };
 
-export default function ThemedParties() {
+export default function GenderReveal() {
   const [, setLocation] = useLocation();
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [lightboxIndex, setLightboxIndex] = useState(0);
 
   const galleryImages = [
-    "/images/themed_marvel_party_6.webp",
-    "/images/themed_dc_party_10.webp",
-    "/images/themed_frozen_party_7.webp",
-    "/images/themed_moana_party_12.webp",
-    "/images/themed_disney_party_8.webp",
-    "/images/themed_princess_party_5.webp"
+    "/images/genderreveal/gender-reveal-gallery-1.webp",
+    "/images/genderreveal/gender-reveal-gallery-2.webp",
+    "/images/genderreveal/gender-reveal-gallery-3.webp",
+    "/images/genderreveal/gender-reveal-gallery-4.webp",
+    "/images/genderreveal/gender-reveal-gallery-5.webp",
+    "/images/genderreveal/gender-reveal-gallery-6.webp"
   ];
 
   const galleryAltTexts = [
-    "Marvel Avengers superhero themed 6th birthday party with red, blue, gold and black balloon installation, white marquee number 6 lights, Captain America shields and Iron Man elements in sunny Cyprus Mediterranean setting with palm trees",
-    "DC Comics superhero themed 10th birthday party with Batman, Superman, Wonder Woman and Flash elements, navy blue red yellow balloon garland, white marquee number 10 lights in bright Cyprus outdoor setting with sea views",
-    "Disney Frozen themed 7th birthday party with ice blue, purple and silver balloons, Elsa and Olaf elements, white marquee number 7 lights in warm sunny Cyprus Mediterranean setting with palm trees",
-    "Disney Moana tropical themed 12th birthday party with turquoise, coral and green balloon garland, tropical flowers and Polynesian patterns, white marquee number 12 lights in sunny Cyprus setting with palm trees and sea views",
-    "Classic Disney themed 8th birthday party with Mickey Mouse colors red yellow black, castle designs and Disney character elements, white marquee number 8 lights in bright Cyprus Mediterranean outdoor setting with palm trees",
-    "Princess themed 5th birthday party with soft pink, lavender and rose gold balloon garland, crowns and tiaras, white marquee number 5 lights in sunny Cyprus Mediterranean setting with elegant styling"
+    "Gender reveal celebration with elegant styling and balloon display",
+    "Luxury gender reveal setup with refined decor",
+    "Outdoor gender reveal party with premium decorations",
+    "Intimate gender reveal moment with styled backdrop",
+    "Sophisticated gender reveal party styling in Cyprus",
+    "Balloon-centric gender reveal installation with premium finishes"
   ];
 
   const openLightbox = (index: number) => {
@@ -125,29 +125,8 @@ export default function ThemedParties() {
   return (
     <div className="min-h-screen bg-[#fffcfc] overflow-hidden">
       <Helmet>
-        <title>Luxury Themed Party Styling Cyprus | Superman, Marvel, Moana, Frozen & More | Dress That Day</title>
-        <meta name="description" content="Immersive character-themed party styling in Cyprus. From Superman and Marvel superheroes to Moana, Frozen, Cars, and fairy tale princesses, we create unforgettable themed celebrations with premium decor, balloon installations, and luxury table styling in Paphos and Limassol." />
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Service",
-            "name": "Themed Party Styling Services",
-            "description": "Complete themed party styling including custom concept development, themed props and furniture rental, immersive backdrops and installations, table styling, lighting design, and full event coordination in Cyprus.",
-            "provider": {
-              "@type": "Organization",
-              "name": "Dress That Day",
-              "url": "https://dressthatday.site"
-            },
-            "areaServed": {
-              "@type": "Country",
-              "name": "Cyprus"
-            },
-            "offers": {
-              "@type": "Offer",
-              "priceCurrency": "EUR"
-            }
-          })}
-        </script>
+        <title>Gender Reveal Styling Cyprus | Dress That Day</title>
+        <meta name="description" content="Elegant gender reveal styling in Cyprus. Thoughtful backdrops, balloons, signage, and table styling to celebrate your news beautifully." />
       </Helmet>
 
       <Navigation />
@@ -157,12 +136,12 @@ export default function ThemedParties() {
       <div className="relative h-[82vh] md:h-[88vh] lg:h-[92vh] overflow-hidden">
         <div 
           className="absolute inset-0 bg-cover bg-center transform scale-105 animate-slow-zoom"
-          style={{ backgroundImage: 'url("/images/hero/themed-parties-superhero-hero.webp")' }}
+          style={{ backgroundImage: 'url("/images/genderreveal/gender-reveal-hero.webp")' }}
         />
         <div className="absolute inset-0 bg-black/30" />
         <PageHeading
-          lines={["Themed", " Parties"]}
-          subtextBelow="Creative concepts brought to life"
+          text="Gender Reveal"
+          subtextBelow="Celebrating your news with elegant style"
         />
       </div>
 
@@ -173,25 +152,25 @@ export default function ThemedParties() {
             The Experience
           </span>
           <h2 className="font-serif text-4xl md:text-5xl text-gray-900 leading-tight mb-12 animate-fade-in-up delay-100">
-            Beyond Imagination
+            Bespoke Celebrations
           </h2>
           <div className="space-y-8 animate-fade-in-up delay-200">
             <p className="text-gray-600 leading-loose font-light text-lg md:text-xl">
-              Whether it's a Superman adventure, Marvel superhero celebration, Moana tropical paradise, Frozen winter wonderland, Lightning McQueen racing experience, or Snow White fairy tale, we don't just decorate—we transport your guests into immersive themed experiences. Our styling is all about the details: props, backdrops, balloon installations, and table settings that collectively tell a compelling story.
+              Whether you're planning an intimate reveal or a lively gathering, our styling services ensure your vision comes to life. We handle every aesthetic detail, allowing you to relax and enjoy the celebration with your guests.
             </p>
             <p className="text-gray-600 leading-loose font-light text-lg md:text-xl">
-              We work with you to develop a cohesive concept that surprises and delights your guests, ensuring every corner of the event space contributes to the magic. From intimate children's parties to grand themed galas, we bring your creative vision to life with exceptional attention to detail.
+              From coastal backdrops to garden celebrations, we create atmospheres that are as unique as your story, making every moment memorable and photogenic.
             </p>
           </div>
           <div className="w-px h-24 bg-luxury-gold/30 mx-auto mt-16" />
         </div>
       </div>
 
-      {/* Gallery Grid */}
+      {/* 3. Editorial Image Gallery */}
       <div className="bg-[#f8f5f2] py-24">
         <div className="max-w-[1400px] mx-auto px-6">
           <div className="text-center mb-16">
-            <h3 className="font-serif text-3xl md:text-4xl text-gray-900 mb-4">Theme Inspiration</h3>
+            <h3 className="font-serif text-3xl md:text-4xl text-gray-900 mb-4">Reveal Inspiration</h3>
             <p className="text-gray-500 font-light">Click to explore our setups</p>
           </div>
           
@@ -208,9 +187,6 @@ export default function ThemedParties() {
                   alt={galleryAltTexts[index]}
                   className="w-full h-full object-cover transition-transform duration-[1.5s] ease-out group-hover:scale-105"
                   loading="lazy"
-                  decoding="async"
-                  width={1200}
-                  height={2150}
                   onError={(e) => {
                     e.currentTarget.style.display = 'none';
                     e.currentTarget.parentElement!.style.backgroundColor = '#f0f0f0';
@@ -227,7 +203,7 @@ export default function ThemedParties() {
         </div>
       </div>
 
-      {/* 4. What's Included Section */}
+      {/* 4. Optional Experience-Specific Section */}
       <div className="bg-white py-24">
         <div className="max-w-4xl mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
@@ -235,14 +211,13 @@ export default function ThemedParties() {
               <h3 className="font-serif text-3xl text-gray-900">What's Included</h3>
               <ul className="space-y-4">
                 {[
-                  "Custom concept development",
-                  "Themed props & furniture rental",
-                  "Immersive backdrops & installations",
-                  "Premium balloon arrangements",
-                  "Table styling & centerpieces",
-                  "Lighting design & ambiance",
-                  "Vendor coordination",
-                  "Full setup & breakdown"
+                  "Themed backdrop & balloon styling",
+                  "Cake plinths & dessert displays",
+                  "Welcome signage & easel",
+                  "Guest table styling & centerpieces",
+                  "Gift area setup",
+                  "Photo opportunity styling",
+                  "Coordination with cake/dessert suppliers"
                 ].map((item, i) => (
                   <li key={i} className="flex items-start gap-4 text-gray-600 font-light">
                     <span className="w-1.5 h-1.5 rounded-full bg-luxury-gold mt-2.5 flex-shrink-0" />
@@ -253,10 +228,9 @@ export default function ThemedParties() {
             </div>
             <div className="relative aspect-square">
               <img 
-                src="/images/themed_parties_detail.webp" 
-                alt="Professional event stylist hands arranging colorful themed party decor with superhero masks, princess crowns, Disney props, balloons and elegant table settings in sunny Cyprus" 
-                loading="lazy"
-                className="w-full h-full object-cover rounded-lg shadow-lg"
+                src="/images/genderreveal/gender-reveal-whats-included.webp" 
+                alt="Gender reveal details" 
+                className="w-full h-full object-cover"
               />
             </div>
           </div>
@@ -267,10 +241,10 @@ export default function ThemedParties() {
       <div className="relative py-32 bg-[#1a1a1a] text-white text-center px-6">
         <div className="max-w-3xl mx-auto space-y-8">
           <h2 className="font-serif text-4xl md:text-6xl leading-tight">
-            Ready to Transform Your Event?
+            Ready to Celebrate?
           </h2>
           <p className="text-gray-400 font-light text-lg">
-            Let us bring your wildest themed party ideas to life.
+            Let us create a beautiful reveal for your little one.
           </p>
           <button 
             onClick={() => setLocation("/design-your-day")}
@@ -292,4 +266,3 @@ export default function ThemedParties() {
     </div>
   );
 }
-/* Force rebuild - Wed Dec 24 04:25:09 EST 2025 */

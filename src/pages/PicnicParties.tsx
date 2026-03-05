@@ -136,7 +136,7 @@ export default function PicnicParties() {
         <PageHeading
           text="PICNIC PARTIES"
           subtextBelow="Sophisticated outdoor dining experiences designed for connection and celebration."
-          className="pt-24 md:pt-28"
+          className="pt-24 md:pt-28 picnic-hero-heading"
         />
       </div>
 
@@ -155,6 +155,37 @@ export default function PicnicParties() {
             </p>
           </div>
           <div className="w-px h-24 bg-luxury-gold/30 mx-auto mt-16" />
+        </div>
+      </div>
+
+      {/* Gallery Section */}
+      <div className="bg-[#f8f5f2] py-24">
+        <div className="max-w-[1400px] mx-auto px-6">
+          <div className="text-center mb-16">
+            <h3 className="font-serif text-3xl md:text-4xl text-gray-900 mb-4">Picnic Inspiration</h3>
+            <p className="text-gray-500 font-light">Tap to expand</p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {galleryImages.map((src, index) => (
+              <div 
+                key={index}
+                className="group relative aspect-[4/5] overflow-hidden cursor-zoom-in bg-white shadow-sm"
+                onClick={() => openLightbox(index)}
+              >
+                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-500 z-10" />
+                <img 
+                  src={src} 
+                  alt={`Picnic gallery image ${index + 1}`}
+                  className="w-full h-full object-cover transition-transform duration-[1.5s] ease-out group-hover:scale-105"
+                  loading="lazy"
+                  decoding="async"
+                  width={1200}
+                  height={2150}
+                />
+              </div>
+            ))}
+          </div>
         </div>
       </div>
 

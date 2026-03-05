@@ -4,10 +4,10 @@ export default function Footer() {
   return (
     <footer className="bg-luxury-white pt-20 pb-10 border-t border-luxury-pink/20" data-scroll-section>
       <div className="container mx-auto px-6">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
-          <div className="col-span-1 md:col-span-1">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16 text-center md:text-left">
+          <div className="col-span-1 md:col-span-1 text-center md:text-left">
             <div className="mb-6 w-40 md:w-48 mx-auto md:mx-0">
-              <img src="/brand/dtd-logo-light.png" alt="Dress That Day" className="w-full h-auto object-contain" />
+              <img src="/images/thatdaylogo-black.png" alt="Dress That Day" className="w-full h-auto object-contain" />
             </div>
             <p className="font-body text-sm text-gray-600 leading-relaxed mb-6">
               Orchestrating emotions and crafting immersive experiences in Cyprus. Where moments become masterpieces.
@@ -15,9 +15,9 @@ export default function Footer() {
             
           </div>
 
-          <div className="col-span-1">
+          <div className="col-span-1 text-center md:text-left">
             <h4 className="font-display text-lg mb-6">Experiences</h4>
-            <ul className="space-y-3 font-body text-sm text-gray-600">
+            <ul className="space-y-3 font-body text-sm text-gray-600 text-center md:text-left">
               <li><Link href="/experiences/little-ones-parties" className="hover:text-luxury-gold transition-colors">Little Un's Parties</Link></li>
               <li><Link href="/experiences/teepee-parties" className="hover:text-luxury-gold transition-colors">Teepee Sleepovers</Link></li>
               <li><Link href="/experiences/picnic-parties" className="hover:text-luxury-gold transition-colors">Luxury Picnics</Link></li>
@@ -29,9 +29,9 @@ export default function Footer() {
             </ul>
           </div>
 
-          <div className="col-span-1">
+          <div className="col-span-1 text-center md:text-left">
             <h4 className="font-display text-lg mb-6">Information</h4>
-            <ul className="space-y-3 font-body text-sm text-gray-600">
+            <ul className="space-y-3 font-body text-sm text-gray-600 text-center md:text-left">
               <li><Link href="/about" className="hover:text-luxury-gold transition-colors">About Us</Link></li>
               <li><Link href="/gallery" className="hover:text-luxury-gold transition-colors">Gallery</Link></li>
               <li><Link href="/blog" className="hover:text-luxury-gold transition-colors">Journal</Link></li>
@@ -41,9 +41,9 @@ export default function Footer() {
             </ul>
           </div>
 
-          <div className="col-span-1">
+          <div className="col-span-1 text-center md:text-left">
             <h4 className="font-display text-lg mb-6">Contact</h4>
-            <ul className="space-y-3 font-body text-sm text-gray-600">
+            <ul className="space-y-3 font-body text-sm text-gray-600 text-center md:text-left">
               <li>Paphos & Limassol, Cyprus</li>
               <li><a href="tel:+35726323212" className="hover:text-luxury-gold transition-colors">26323212</a></li>
               <li><a href="tel:+35726323209" className="hover:text-luxury-gold transition-colors">26323209</a></li>
@@ -58,7 +58,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-gray-100 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-gray-400 font-body">
+        <div className="border-t border-gray-100 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-gray-400 font-body text-center md:text-left">
           <p>&copy; {new Date().getFullYear()} Dress That Day. All rights reserved.</p>
           <p className="mt-2 md:mt-0">Designed with Luxury in Mind</p>
         </div>

@@ -111,7 +111,7 @@ export default function PageHeading({
           ref={subtextRef}
           className={cn(
             // Typography
-            subtextColor, "text-center font-light",
+            subtextColor, "text-center font-light mx-auto !text-center text-balance",
             // Responsive sizing
             "text-sm md:text-base lg:text-lg",
             // Spacing and constraints

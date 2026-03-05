@@ -134,7 +134,7 @@ export default function LittleOnesParties() {
         />
         <div className="absolute inset-0 bg-black/30" />
         <PageHeading
-          lines={["Little Ones", "Parties"]}
+          lines={["Little Ones", " Parties"]}
           subtextBelow="Magical moments for the youngest guests"
         />
         <div className="absolute inset-0 flex items-center justify-center text-center px-4 hidden">

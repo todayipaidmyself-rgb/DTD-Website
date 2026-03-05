@@ -112,11 +112,11 @@ export default function Navigation() {
         <div className="container mx-auto">
           <div className="flex justify-between items-center">
             <div className="flex-1" />
-            <Link href="/" className="z-50 relative block group flex-1 text-center">
+            <Link href="/" className="z-50 relative block group text-center">
               <img 
-                src="/brand/dtd-logo-light.png" 
+                src="/images/thatdaylogo-white.png" 
                 alt="Dress That Day"
-                className="mx-auto h-24 md:h-28 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
+                className="mx-auto h-20 md:h-28 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
               />
             </Link>
             <div className="flex-1 flex justify-end">
@@ -189,6 +189,21 @@ export default function Navigation() {
                 <span className={cn(
                   "absolute -bottom-1 left-0 w-0 h-[1px] bg-[#a19e98] transition-all duration-300 group-hover:w-full",
                   location === '/blog' ? "w-full" : ""
+                )} />
+              </Link>
+
+              <Link 
+                href="/contact"
+                className={cn(
+                  "text-[#c6b4ab] hover:text-[#a19e98] transition-colors duration-300 relative group",
+                  location === '/contact' ? "text-white" : "text-[#c6b4ab]",
+                  overlayOpen ? "opacity-0 pointer-events-none" : "opacity-100"
+                )}
+              >
+                Contact
+                <span className={cn(
+                  "absolute -bottom-1 left-0 w-0 h-[1px] bg-[#a19e98] transition-all duration-300 group-hover:w-full",
+                  location === '/contact' ? "w-full" : ""
                 )} />
               </Link>
 
