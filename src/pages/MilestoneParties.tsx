@@ -161,7 +161,7 @@ export default function MilestoneParties() {
         />
         <div className="absolute inset-0 bg-black/30" />
         <PageHeading
-          lines={["Milestone", "Parties"]}
+          lines={["Milestone", " Parties"]}
           subtextBelow="Celebrate life's important moments"
         />
       </div>

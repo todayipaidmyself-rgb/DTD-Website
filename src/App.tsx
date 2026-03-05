@@ -32,6 +32,7 @@ import LittleOnesParties from "./pages/LittleOnesParties";
 import FAQ from "./pages/FAQ";
 import Terms from "./pages/Terms";
 import BlogPost from "./pages/BlogPost";
+import GenderReveal from "./pages/GenderReveal";
 
 function Router() {
   return (
@@ -43,6 +44,7 @@ function Router() {
       <Route path="/design-your-day" component={DesignYourDay} />
       <Route path="/blog/:slug" component={BlogPost} />
       <Route path="/blog" component={Blog} />
+      <Route path="/gender-reveal" component={GenderReveal} />
       <Route path="/faq" component={FAQ} />
       <Route path="/terms" component={Terms} />
 

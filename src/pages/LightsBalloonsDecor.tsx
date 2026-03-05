@@ -380,7 +380,7 @@ export default function LightsBalloonsDecor() {
             backgroundImage: 'url("/images/lights-decor/IMG_6715.JPG")',
           }}
         />
-        <div className="absolute inset-0 bg-black/40" />
+        <div className="absolute inset-0 bg-black/60" />
         
         <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
           <h2 className="font-serif text-5xl md:text-7xl text-white mb-12 leading-tight">

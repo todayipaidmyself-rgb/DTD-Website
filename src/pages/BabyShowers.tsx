@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useLocation } from "wouter";
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
+import PageHeading from '@/components/PageHeading';
 import { Helmet } from 'react-helmet-async';
 import FloatingParticles from "../components/FloatingParticles";
 import { ChevronLeft, ChevronRight, X } from "lucide-react";
@@ -126,22 +127,13 @@ export default function BabyShowers() {
       <div className="relative h-[82vh] md:h-[88vh] lg:h-[92vh] overflow-hidden">
         <div 
           className="absolute inset-0 bg-cover bg-center transform scale-105 animate-slow-zoom"
-          style={{ backgroundImage: 'url("/images/experiences/baby-showers-hero.webp")' }}
+          style={{ backgroundImage: 'url("/images/baby-showers/baby-shower-hero.webp")' }}
         />
         <div className="absolute inset-0 bg-black/30" />
-        <div className="absolute inset-0 flex items-center justify-center text-center px-4">
-          <div className="max-w-4xl">
-            <span className="block text-white/90 text-sm md:text-base tracking-[0.3em] uppercase mb-6 animate-fade-in-up font-light">
-              Welcoming New Life
-            </span>
-            <h1 className="font-serif text-5xl md:text-7xl text-white leading-tight animate-fade-in-up delay-100 mb-8">
-              Baby Showers
-            </h1>
-            <p className="font-light text-lg md:text-xl text-white/90 max-w-2xl mx-auto leading-relaxed animate-fade-in-up delay-200">
-              A celebration of love and new beginnings. We create serene, beautiful environments to honor the mother-to-be and the little one on the way.
-            </p>
-          </div>
-        </div>
+        <PageHeading
+          text="Baby Showers"
+          subtextBelow="A celebration of love and new beginnings. We create serene, beautiful environments to honor the mother-to-be and the little one on the way."
+        />
       </div>
 
       {/* 2. Experience Introduction */}
@@ -227,7 +219,7 @@ export default function BabyShowers() {
             </div>
             <div className="relative aspect-square">
               <img 
-                src="/images/new_collection/18.webp" 
+                src="/images/baby-showers/baby-shower-whats-included.webp" 
                 alt="Baby shower details" 
                 className="w-full h-full object-cover"
               />

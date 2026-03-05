@@ -148,7 +148,10 @@ export default function Home() {
         
         <div className="absolute inset-0 z-20 text-center px-6 max-w-6xl mx-auto text-white flex flex-col items-center justify-center">
           <div className="flex flex-col items-center justify-center gap-2 w-full">
-            <p className="text-white/85 text-sm md:text-base lg:text-lg font-[Poppins] tracking-[0.25em] uppercase max-w-4xl px-4">
+            <p
+              className="text-white/85 text-sm md:text-base lg:text-lg tracking-[0.25em] uppercase max-w-4xl px-4"
+              style={{ fontFamily: '"The Seasons", serif' }}
+            >
               {subtexts[currentSlide]}
             </p>
             
@@ -170,16 +173,16 @@ export default function Home() {
         </div>
         
         <div className="container mx-auto px-6 relative z-10">
-          <div className="max-w-4xl mx-auto space-y-6 text-center" data-scroll data-scroll-speed="1">
-            <p className="text-[11px] uppercase tracking-[0.35em] text-black/60">EVENT COLLECTIONS</p>
-            <h2 className="font-serif text-4xl md:text-5xl text-black tracking-tight">
+          <div className="max-w-4xl mx-auto space-y-6 text-center md:text-left" data-scroll data-scroll-speed="1">
+            <p className="text-[11px] uppercase tracking-[0.35em] text-black/60 text-center md:text-left">EVENT COLLECTIONS</p>
+            <h2 className="font-serif text-4xl md:text-5xl text-black tracking-tight text-center md:text-left">
               The Finishing Touch.
             </h2>
-            <p className="font-body text-base md:text-lg text-black/70 font-light">
+            <p className="font-body text-base md:text-lg text-black/70 font-light text-center md:text-left">
               We create refined, design-led events with seamless execution and considered detail.
             </p>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4 font-body text-black/70 text-base font-light text-left md:text-left">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4 font-body text-black/70 text-base font-light text-center md:text-left">
               <span>Bespoke Event Design & Creative Direction</span>
               <span>Concept Development & Visual Mood Boards</span>
               <span>Contemporary Wedding & Celebration Styling</span>

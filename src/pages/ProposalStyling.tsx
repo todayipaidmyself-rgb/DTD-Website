@@ -87,7 +87,7 @@ export default function ProposalStyling() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="font-display text-luxury-gold text-xl tracking-widest uppercase mb-8"
+            className="text-luxury-gold text-sm md:text-base tracking-[0.2em] uppercase mb-6 font-body"
           >
             The Perfect Question
           </motion.p>
@@ -96,7 +96,7 @@ export default function ProposalStyling() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
-            className="font-display text-4xl md:text-5xl text-luxury-text mb-12 leading-tight"
+            className="font-serif text-4xl md:text-5xl text-luxury-text mb-10 leading-tight"
           >
             Crafting the ultimate romantic setting for your life-changing moment.
           </motion.h2>

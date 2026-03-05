@@ -10,6 +10,8 @@ export const experienceGroups: ExperienceGroup[] = [
       { name: "Teepee Tent Parties", href: "/experiences/teepee-parties", subtext: "Luxury sleepover experiences for little dreamers" },
       { name: "Little Ones Parties", href: "/experiences/little-ones-parties", subtext: "Thoughtfully styled celebrations for early years" },
       { name: "Birthday Parties", href: "/experiences/birthday-parties", subtext: "Beautifully curated birthday moments" },
+      { name: "Baby Showers", href: "/baby-showers", subtext: "Soft, elegant celebrations for mum-to-be" },
+      { name: "Gender Reveal", href: "/gender-reveal", subtext: "Celebrate the big surprise in style" },
       { name: "Themed Parties", href: "/experiences/themed-parties", subtext: "Immersive themes brought to life" },
     ],
   },

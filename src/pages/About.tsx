@@ -71,7 +71,7 @@ export default function About() {
       />
 
       {/* Hero Section */}
-      <section className="relative h-[85vh] w-full overflow-hidden flex items-center mt-0 pt-0" data-scroll-section>
+      <section className="relative h-[85vh] w-full overflow-hidden flex items-center justify-center text-center mt-0 pt-0" data-scroll-section>
         <div className="absolute inset-0 w-full h-full">
           <div 
             className="absolute inset-0 w-full h-full bg-cover bg-center"
@@ -85,7 +85,7 @@ export default function About() {
         
         <PageHeading 
           text="About Us"
-          subtextBelow="Luxury event styling in Cyprus — designed with intention, built for emotion, finished for the camera."
+          className="about-hero-heading text-center items-center justify-center mx-auto"
         />
       </section>
 
@@ -167,9 +167,9 @@ export default function About() {
               tag="h2" 
               className="font-serif text-4xl md:text-5xl text-luxury-text mb-6 text-center"
             />
-            <p className="font-body text-gray-600 text-lg md:text-xl font-light text-center mb-16 max-w-3xl mx-auto">
-              Choose a signature setup or let us curate something completely bespoke.
-            </p>
+          <p className="font-body text-gray-600 text-lg md:text-xl font-light text-center mb-16 max-w-3xl mx-auto">
+            Choose a signature setup or let us curate something completely bespoke.
+          </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {experiences.map((exp, i) => (
                 <Link 
@@ -272,17 +272,6 @@ export default function About() {
             >
               Design Your Day
             </Link>
-            <button
-              onClick={() => {
-                const experiencesSection = document.querySelector('[data-experiences-section]');
-                if (experiencesSection) {
-                  experiencesSection.scrollIntoView({ behavior: 'smooth' });
-                }
-              }}
-              className="inline-block px-12 py-5 border-2 border-luxury-text text-luxury-text text-sm uppercase tracking-[0.2em] hover:bg-luxury-text hover:text-white transition-all duration-500"
-            >
-              Explore Experiences
-            </button>
           </div>
         </div>
       </section>

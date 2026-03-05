@@ -450,6 +450,18 @@
   }
 }
 
+@media (min-width: 768px) {
+  [data-page="PicnicParties"] .picnic-hero-heading p {
+    white-space: nowrap;
+  }
+}
+
+@media (min-width: 768px) {
+  .about-hero-heading p {
+    white-space: nowrap;
+  }
+}
+
 /* Fix Brittany kerning issue for ThaT */
 .tight-a {
   display: inline;
