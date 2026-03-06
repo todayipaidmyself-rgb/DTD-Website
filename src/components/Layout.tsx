@@ -13,7 +13,8 @@ interface LayoutProps {
 export default function Layout({ children }: LayoutProps) {
   const [location] = useLocation();
   const isHome = location === "/";
-  const { containerRef } = useLocomotiveScroll(true);
+  // Temporary diagnostic: disable Locomotive smooth scroll on Home only
+  const { containerRef } = useLocomotiveScroll(!isHome);
 
   return (
     <div className="bg-luxury-blush min-h-screen flex flex-col">

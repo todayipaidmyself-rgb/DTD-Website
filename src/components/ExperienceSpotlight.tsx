@@ -90,9 +90,18 @@ export default function ExperienceSpotlight() {
       <section className="py-16 bg-white" data-scroll-section>
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
-            {sorted.map((item) => (
-              <ExperienceCard key={item.slug} item={item} />
-            ))}
+            {sorted.map((item, idx) => {
+              const isLast = idx === sorted.length - 1;
+              const isSoloInLastRowLg = sorted.length % 3 === 1 && isLast;
+              return (
+                <div
+                  key={item.slug}
+                  className={isSoloInLastRowLg ? "lg:col-span-3 lg:max-w-xl lg:mx-auto" : ""}
+                >
+                  <ExperienceCard item={item} />
+                </div>
+              );
+            })}
           </div>
         </div>
       </section>

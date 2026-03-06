@@ -2,13 +2,7 @@ import Layout from '@/components/Layout';
 import RevealText from '@/components/RevealText';
 import PageHeading from '@/components/PageHeading';
 import SEO from '@/components/SEO';
-import { useState } from 'react';
-
 export default function Gallery() {
-  const [filter, setFilter] = useState('All');
-
-  const categories = ['All'];
-
   const schema = {
     "@context": "https://schema.org",
     "@type": "ImageGallery",
@@ -78,7 +72,7 @@ export default function Gallery() {
     { src: "/images/dtd-gallery-2/dtd-gallery-pictures36.JPG", title: "", loc: "", category: "All", alt: "Gallery image 54" },
   ];
 
-  const filteredImages = filter === 'All' ? images : images.filter(img => img.category === filter);
+  const filteredImages = images;
 
   return (
     <Layout>
@@ -112,22 +106,7 @@ export default function Gallery() {
               Every image tells a story. These are real moments from real events we've had the privilege to style across Cyprus.
             </p>
             
-            {/* Filter Buttons */}
-            <div className="flex flex-wrap justify-center gap-4 mb-12">
-              {categories.map((cat) => (
-                <button
-                  key={cat}
-                  onClick={() => setFilter(cat)}
-                  className={`px-6 py-2 text-sm uppercase tracking-widest transition-all duration-300 border ${
-                    filter === cat 
-                      ? 'bg-luxury-text text-white border-luxury-text' 
-                      : 'bg-transparent text-luxury-text border-luxury-text/30 hover:border-luxury-text'
-                  }`}
-                >
-                  {cat}
-                </button>
-              ))}
-            </div>
+            {/* Filters removed for single curated feed */}
           </div>
 
           <div className="columns-1 md:columns-2 lg:columns-3 gap-8 space-y-8">

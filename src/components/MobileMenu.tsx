@@ -63,9 +63,11 @@ export default function MobileMenu({ isOpen, onClose, experienceGroups }: Mobile
           <div className="border-t border-white/10 pt-6">
             <button
               onClick={() => toggleAccordion('Experiences')}
-              className="w-full flex items-center justify-between text-lg font-light text-[#f4f4f2] hover:text-luxury-gold transition-colors duration-300 tracking-wide"
+              className="w-full flex items-center justify-between text-lg font-light text-[#f4f4f2] hover:text-luxury-gold transition-colors duration-300 tracking-wide nav-experiences-glow"
             >
-              Experiences
+              <span className="flex items-center gap-2">
+                Experiences
+              </span>
               <ChevronDown 
                 size={20}
                 className={cn(
