@@ -13,7 +13,7 @@ export const blogPosts: BlogPost[] = [
     title: "The Ultimate Guide to Luxury Teepee Sleepovers in Cyprus",
     category: "Teepee Sleepovers",
     date: "October 15, 2025",
-    heroImage: "/images/blog/teepee-sleepover.jpg",
+    heroImage: "/images/hero_slide_teepee_luxury.webp",
     content: `
       <p>Luxury teepee sleepovers have become one of the most sought‑after children's party experiences in Cyprus. Combining comfort, immersive styling and unforgettable details, these celebrations transform ordinary spaces into magical environments.</p>
 
@@ -34,7 +34,7 @@ export const blogPosts: BlogPost[] = [
     title: "5 Romantic Proposal Ideas in Paphos That She’ll Never Forget",
     category: "Proposal Styling",
     date: "September 28, 2025",
-    heroImage: "/images/blog/proposal-paphos.jpg",
+    heroImage: "/images/hero_slide_proposal_luxury.webp",
     content: `
       <p>Paphos offers breathtaking coastal scenery, making it one of Cyprus’ most romantic proposal destinations. The right styling transforms a beautiful location into an unforgettable moment.</p>
 
@@ -55,7 +55,7 @@ export const blogPosts: BlogPost[] = [
     title: "How to Style a Chic Baby Shower: Trends for 2025",
     category: "Baby Showers & Reveals",
     date: "November 2, 2025",
-    heroImage: "/images/blog/baby-shower.jpg",
+    heroImage: "/images/hero_slide_baby_shower_luxury.webp",
     content: `
       <p>Modern baby showers in Cyprus embrace refined colour palettes, organic textures and elevated styling concepts.</p>
 
@@ -76,7 +76,7 @@ export const blogPosts: BlogPost[] = [
     title: "Creating the Perfect Beach Picnic: A Step-by-Step Guide",
     category: "Luxury Picnics",
     date: "August 10, 2025",
-    heroImage: "/images/blog/beach-picnic.jpg",
+    heroImage: "/images/hero_slide_picnic_luxury.webp",
     content: `
       <p>A luxury beach picnic in Cyprus combines natural beauty with intentional styling.</p>
 
@@ -97,7 +97,7 @@ export const blogPosts: BlogPost[] = [
     title: "Why Professional Event Styling Matters for Kids’ Parties",
     category: "Kids Parties",
     date: "July 5, 2025",
-    heroImage: "/images/blog/kids-party.jpg",
+    heroImage: "/images/hero_slide_kids_luxury.webp",
     content: `
       <p>Children’s celebrations have evolved into immersive experiences where design and storytelling matter.</p>
 
@@ -118,7 +118,7 @@ export const blogPosts: BlogPost[] = [
     title: "Top 10 Venues for Luxury Events in Limassol",
     category: "Event Styling Tips",
     date: "June 20, 2025",
-    heroImage: "/images/blog/limassol-venues.jpg",
+    heroImage: "/images/cyprus_hero_terrace_v2.webp",
     content: `
       <p>Limassol offers some of Cyprus’ most exclusive venues for luxury celebrations.</p>
 
@@ -140,7 +140,7 @@ export const blogPosts: BlogPost[] = [
     title: "Safari Adventure: Styling a Wildly Elegant Kids Party",
     category: "Kids Parties",
     date: "January 12, 2025",
-    heroImage: "/images/blog/safari-adventure.jpg",
+    heroImage: "/images/blog_kids_party_safari.webp",
     excerpt:
       "Sage greens, sandy neutrals, and playful animal details—here’s how to create a luxury safari party in Cyprus that feels fun, elevated, and beautifully photographed.",
     meta: {
@@ -200,7 +200,7 @@ export const blogPosts: BlogPost[] = [
     title: "Enchanted Garden: A Whimsical Fairy Party Theme",
     category: "Kids Parties",
     date: "February 5, 2025",
-    heroImage: "/images/blog/enchanted-garden.jpg",
+    heroImage: "/images/blog_kids_party_fairy.webp",
     excerpt:
       "A fairy party can feel modern and luxurious—soft pastels, floral layering, gentle lighting, and magical details that still look elevated in photos.",
     meta: {
@@ -258,7 +258,7 @@ export const blogPosts: BlogPost[] = [
     title: "Boho Chic Sleepovers: The Ultimate Indoor Glamping Experience",
     category: "Teepee Sleepovers",
     date: "January 28, 2025",
-    heroImage: "/images/blog/boho-sleepover.jpg",
+    heroImage: "/images/blog_teepee_boho_chic.webp",
     excerpt:
       "From lighting to linens, here’s how to elevate an indoor teepee sleepover into a cosy, premium glamping moment that feels magical all night long.",
     meta: {
@@ -314,7 +314,7 @@ export const blogPosts: BlogPost[] = [
     title: "Movie Night Magic: Hosting a Luxury Cinema Sleepover",
     category: "Teepee Sleepovers",
     date: "March 10, 2025",
-    heroImage: "/images/blog/movie-night.jpg",
+    heroImage: "/images/blog_teepee_movie_night.webp",
     excerpt:
       "A cinematic sleepover done the luxury way—projector setup, cosy textures, snack styling, and lighting that makes everything look like a film still.",
     meta: {
@@ -371,7 +371,7 @@ export const blogPosts: BlogPost[] = [
     title: "Sunset Romance: Planning a Cliffside Picnic in Cyprus",
     category: "Luxury Picnics",
     date: "April 2, 2025",
-    heroImage: "/images/blog/cliffside-picnic.jpg",
+    heroImage: "/images/blog_picnic_sunset_romance.webp",
     excerpt:
       "Golden hour, sea views, and refined styling—here’s how to plan a cliffside picnic in Cyprus that feels intimate, elevated, and effortlessly romantic.",
     meta: {
@@ -428,7 +428,7 @@ export const blogPosts: BlogPost[] = [
     title: "Beachside Bliss: Styling a Luxury Group Picnic",
     category: "Luxury Picnics",
     date: "May 15, 2025",
-    heroImage: "/images/blog/beachside-bliss.jpg",
+    heroImage: "/images/blog_picnic_group_celebration.webp",
     excerpt:
       "Hosting a group picnic? Here’s how to keep it elevated—layout, table styling, coastal colour stories, and practical comfort details for Cyprus beach days.",
     meta: {

@@ -101,7 +101,7 @@ export default function ThemedParties() {
 
   const galleryImages = [
     "/images/themed_marvel_party_6.webp",
-    "/images/themed_dc_party_10.webp",
+    "/images/superhero-table-closeup.webp",
     "/images/themed_frozen_party_7.webp",
     "/images/themed_moana_party_12.webp",
     "/images/themed_disney_party_8.webp",
@@ -110,7 +110,7 @@ export default function ThemedParties() {
 
   const galleryAltTexts = [
     "Marvel Avengers superhero themed 6th birthday party with red, blue, gold and black balloon installation, white marquee number 6 lights, Captain America shields and Iron Man elements in sunny Cyprus Mediterranean setting with palm trees",
-    "DC Comics superhero themed 10th birthday party with Batman, Superman, Wonder Woman and Flash elements, navy blue red yellow balloon garland, white marquee number 10 lights in bright Cyprus outdoor setting with sea views",
+    "Superhero themed birthday table setup with closeup of elegant place settings, hero symbols, and premium styling details",
     "Disney Frozen themed 7th birthday party with ice blue, purple and silver balloons, Elsa and Olaf elements, white marquee number 7 lights in warm sunny Cyprus Mediterranean setting with palm trees",
     "Disney Moana tropical themed 12th birthday party with turquoise, coral and green balloon garland, tropical flowers and Polynesian patterns, white marquee number 12 lights in sunny Cyprus setting with palm trees and sea views",
     "Classic Disney themed 8th birthday party with Mickey Mouse colors red yellow black, castle designs and Disney character elements, white marquee number 8 lights in bright Cyprus Mediterranean outdoor setting with palm trees",

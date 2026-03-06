@@ -152,16 +152,6 @@ export default function Navigation() {
                 )} />
               </Link>
 
-              <button 
-                onClick={() => setOverlayOpen(true)}
-                className={cn(
-                  "text-[#c6b4ab] hover:text-[#a19e98] transition-colors duration-300 flex items-center gap-1 font-[Poppins] uppercase tracking-[0.12em]",
-                  overlayOpen ? "opacity-0 pointer-events-none" : "opacity-100"
-                )}
-              >
-                Experiences
-              </button>
-
               <Link 
                 href="/gallery"
                 className={cn(
@@ -176,6 +166,16 @@ export default function Navigation() {
                   location === '/gallery' ? "w-full" : ""
                 )} />
               </Link>
+
+              <button 
+                onClick={() => setOverlayOpen(true)}
+                className={cn(
+                  "text-white hover:text-[#e6dcc7] transition-colors duration-300 flex items-center gap-2 font-[Poppins] uppercase tracking-[0.12em] relative nav-experiences-glow",
+                  overlayOpen ? "opacity-0 pointer-events-none" : "opacity-100"
+                )}
+              >
+                <span>Experiences</span>
+              </button>
 
               <Link 
                 href="/blog"
